@@ -99,7 +99,7 @@
 <meta property="og:image" content="http://yoursite.com/2020/02/05/Hexo_createmylog/image5.png">
 <meta property="og:image" content="http://yoursite.com/2020/02/05/Hexo_createmylog/image6.png">
 <meta property="article:published_time" content="2020-02-05T14:45:00.000Z">
-<meta property="article:modified_time" content="2020-02-06T14:55:07.157Z">
+<meta property="article:modified_time" content="2020-02-06T15:28:23.068Z">
 <meta property="article:author" content="gusiyun">
 <meta property="article:tag" content="Hexo">
 <meta property="article:tag" content="部署">
@@ -478,7 +478,7 @@
 <li><p>使用编辑器打开博客的站点文件夹，修改<code>_config.yml</code>文件的一些配置（<b>这个配置文件里冒号之后都都一个半角空格</b>） 在该文件的最后添加：（<b>YourgithubName要改的</b>）</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: https:&#x2F;&#x2F;github.com&#x2F;YourgithubName&#x2F;YourgithubName.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>进入git bash命令框下，执行：<br><code>hexo c &amp;&amp; hexo g &amp;&amp; hexo s</code> <br><br>  <b>解释</b>（两种命令方式都可正常执行）：</p>
+<li><p>进入git bash命令框下，执行：<br><code>hexo clean &amp;&amp; hexo g &amp;&amp; hexo s</code> <br><br>  <b>解释</b>（两种命令方式都可正常执行）：</p>
 <ul>
 <li>hexo clean 表示清楚已经生成的public下的文件</li>
 <li>hexo generate 表示编译文件</li>
@@ -493,7 +493,7 @@
 <h2 id="github部署"><a href="#github部署" class="headerlink" title="github部署"></a>github部署</h2><ul>
 <li><p>先安装上传的相关模块 <code>npm install hexo-deployer-git --save</code></p>
 </li>
-<li><p>进入git bash命令框下，执行：<br><code>hexo c &amp;&amp; hexo g &amp;&amp; hexo d</code> <br></p>
+<li><p>进入git bash命令框下，执行：<br><code>hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</code> <br></p>
 <ul>
 <li>hexo d 命令是hexo deploy的缩写，表示上传<br></li>
 <li>第一次deploy的时候需要输入githubd <code>username</code>和<code>passward</code></li>

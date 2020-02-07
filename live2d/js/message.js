@@ -23,12 +23,12 @@ String.prototype.renderTip = function (context) {
 var re = /x/;
 console.log(re);
 re.toString = function() {
-    showMessage('哈哈，你打开了控制台，是想要看看我的秘密吗？', 5000);
+    showMessage('哈哈，你打开了控制台，是想要看看我的秘密吗？', 10000);
     return '';
 };
 
 $(document).on('copy', function (){
-    showMessage('你都复制了些什么呀，转载要记得加上出处哦~~', 5000);
+    showMessage('【转载】要记得加上出处哦~~', 10000);
 });
 
 function initTips(){
@@ -63,14 +63,14 @@ initTips();
     if(document.referrer !== ''){
         var referrer = document.createElement('a');
         referrer.href = document.referrer;
-        text = '嗨！来自 <span style="color:#0099cc;">' + referrer.hostname + '</span> 的朋友！';
+        text = ' 本喵好像在哪里闻到过你.. ';
         var domain = referrer.hostname.split('.')[1];
         if (domain == 'baidu') {
-            text = '嗨！ 来自 百度搜索 的朋友！<br>欢迎访问<span style="color:#0099cc;">「 ' + document.title.split(' - ')[0] + ' 」</span>';
+            text = '嗨！ 有事没事都要百度！<br>来和我玩耍啊 <span style="color:#0099cc;">「 ' + document.title.split(' - ')[0] + ' 」</span>';
         }else if (domain == 'so') {
             text = '嗨！ 来自 360搜索 的朋友！<br>欢迎访问<span style="color:#0099cc;">「 ' + document.title.split(' - ')[0] + ' 」</span>';
         }else if (domain == 'google') {
-            text = '嗨！ 来自 谷歌搜索 的朋友！<br>欢迎访问<span style="color:#0099cc;">「 ' + document.title.split(' - ')[0] + ' 」</span>';
+            text = '嗨！ 会Google一下的猿才是好猿！<br>欢迎访问<span style="color:#0099cc;">「 ' + document.title.split(' - ')[0] + ' 」</span>';
         }
     }else {
         if (window.location.href == `${home_Path}`) { //主页URL判断，需要斜杠结尾

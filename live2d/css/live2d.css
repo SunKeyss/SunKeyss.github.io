@@ -1,8 +1,8 @@
 #landlord {
     user-select: none;
-    position: absolute;
+    position: fixed;
     right: 30px;
-    bottom: 0px;
+    bottom: 30px;
     width: 150;
     height: 300;
     z-index: 10000;
@@ -11,7 +11,9 @@
 }
 
 #live2d {
-    position: right;
+	position: fixed;
+	bottom: 60px;
+	right: 25px
 }
 
 .message {
@@ -20,8 +22,8 @@
     height: auto;
     margin: auto;
     padding: 7px;
-    top: -55px;
-    left: -10px;
+    top: 235px;
+    right: 10px;
     text-align: center;
     border: 1px solid rgba(245,255,250,.8);
     border-radius: 12px;
@@ -32,7 +34,7 @@
     text-overflow: ellipsis;
     text-transform: uppercase;
     overflow: hidden;
-    position: absolute;
+    position: fixed;
     animation-delay: 5s;
     animation-duration: 50s;
     animation-iteration-count: infinite;
@@ -41,9 +43,9 @@
 }
 
 .hide-button {
-    position: absolute;
-    bottom: 40px;
-    right: 0;
+    position: fixed;
+    bottom: 80px;
+    right: 10px;
     /* bottom: 30px; */
     display: none;
     overflow: hidden;

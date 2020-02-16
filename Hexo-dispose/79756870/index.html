@@ -98,7 +98,7 @@
 <meta property="og:image" content="https://www.sunkeyys.site/Hexo-dispose/79756870/image4.png">
 <meta property="og:image" content="https://www.sunkeyys.site/Hexo-dispose/79756870/image5.png">
 <meta property="article:published_time" content="2020-02-16T06:25:00.000Z">
-<meta property="article:modified_time" content="2020-02-16T13:29:43.800Z">
+<meta property="article:modified_time" content="2020-02-16T13:46:47.802Z">
 <meta property="article:author" content="gusiyun">
 <meta property="article:tag" content="Hexo">
 <meta name="twitter:card" content="summary">
@@ -496,24 +496,8 @@ react:
 <li><p><strong>以下开始：</strong> <strong><em>如果notepad++打开乱码无法解决，可以下载一个sublime试试</em></strong></p>
 <ul>
 <li><p>打开\themes\next\layout下的_layout.swig，在body标签内添加：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">&lt;link rel&#x3D;&quot;stylesheet&quot; href&#x3D;&quot;&#x2F;live2d&#x2F;css&#x2F;live2d.css&quot; &#x2F;&gt;</span><br><span class="line">&lt;div id&#x3D;&quot;landlord&quot;&gt;</span><br><span class="line">    &lt;div class&#x3D;&quot;message&quot; style&#x3D;&quot;opacity:0&quot;&gt;&lt;&#x2F;div&gt;</span><br><span class="line">        &lt;canvas id&#x3D;&quot;live2d&quot; width&#x3D;&quot;280&quot; height&#x3D;&quot;250&quot; class&#x3D;&quot;live2d&quot;&gt;&lt;&#x2F;canvas&gt;</span><br><span class="line">        &lt;div class&#x3D;&quot;hide-button&quot;&gt;隐藏&lt;&#x2F;div&gt;</span><br><span class="line">    &lt;&#x2F;div&gt;</span><br><span class="line"></span><br><span class="line">    &lt;script type&#x3D;&quot;text&#x2F;javascript&quot;&gt;</span><br><span class="line">        var message_Path &#x3D; &#39;&#x2F;live2d&#x2F;&#39;</span><br><span class="line">        var home_Path &#x3D; &#39;SunKeyys.github.io&#x2F;&#39;  &#x2F;&#x2F;此处修改为你的域名</span><br><span class="line">    &lt;&#x2F;script&gt;</span><br><span class="line"></span><br><span class="line">    &lt;script type&#x3D;&quot;text&#x2F;javascript&quot; src&#x3D;&quot;&#x2F;live2d&#x2F;js&#x2F;live2d.js&quot;&gt;&lt;&#x2F;script&gt;</span><br><span class="line">    &lt;script type&#x3D;&quot;text&#x2F;javascript&quot; src&#x3D;&quot;&#x2F;live2d&#x2F;js&#x2F;message.js&quot;&gt;&lt;&#x2F;script&gt;</span><br><span class="line">    &lt;script type&#x3D;&quot;text&#x2F;javascript&quot;&gt;</span><br><span class="line">         loadlive2d(&quot;live2d&quot;, &quot;&#x2F;live2d&#x2F;model&#x2F;tia&#x2F;model.json&quot;); &#x2F;&#x2F;此处为你是用的模型文件，可以修改</span><br><span class="line">    &lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
 </li>
-<li><link rel="stylesheet" href="/live2d/css/live2d.css">
-<div id="landlord">
-    <div class="message" style="opacity:0"></div>
-    <canvas id="live2d" width="280" height="250" class="live2d"></canvas>
-    <div class="hide-button">隐藏</div>
-</div>
-
-<script type="text/javascript">
-    var message_Path = '/live2d/'
-    var home_Path = 'SunKeyys.github.io/'  //此处修改为你的域名
-</script>
-
-<script type="text/javascript" src="/live2d/js/live2d.js"></script>
-<script type="text/javascript" src="/live2d/js/message.js"></script>
-<script type="text/javascript">
-    loadlive2d("live2d", "/live2d/model/tia/model.json");  //此处为你是用的模型文件，可以修改
-</script></li>
 <li><p>按照大佬的指点，要换模型就去修改 loadlive2d路径就好了（我直接把模型文件换自己的的模型进去）</p>
 </li>
 <li><p>要改模型显示的位置的话就去修改css就行了(<strong><em>怎么修改我就不再往下讲了，不会的话就到这里停下来吧..不要强行搞事情</em></strong>)</p>
